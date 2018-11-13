@@ -20,6 +20,9 @@
 
     <!--Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    
+    <!--Fonts Google-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 
     <!--My JS-->
     <script defer src="./assets/script/script.js"></script>
@@ -32,41 +35,62 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-lg bg-primary">
-        <div class="navbar-brand">
-            <img src="./assets/img/logo-menu.png">
-        </div>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuitems" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
+<div id="homepage">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <img src="./assets/img/logo-menu.png" class="navbar-brand img-fluid">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
         </button>
-
-        <div class="collapse navbar-collapse" id="menuitems">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item" active>
-                    <a class="nav-link" href="#t">Missão</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Beeliving</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contato</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sing Up</a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link">Log In</a>
-                </li>
-
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Missão<span class="sr-only">Missão</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Beeliving<span class="sr-only">Beeliving</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato<span class="sr-only">Contato</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#">Sing Up<span class="sr-only">Sing Up</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Login<span class="sr-only">Login</span></a>
+            </li>
+          </ul>
         </div>
-    </nav>
-    
+      </nav><!--Nav End-->
+      
+      <div class="row justify-content-center mt-5">
+          <div class="col-" id="text-home"> 
+              <p class="mb-0"><span class="text-warning">COWORKINGS</span> DIFERENTES</p>
+              DE TUDO O QUE VOCÊ JÁ VIU</div>
+      </div><!--Row-->
+
+      <div class="row justify-content-center mt-3">
+        <form class="btn-group" role="group" method="post" action="#">
+            <select class="custom-select">
+                    <option selected>Escolha a cidade</option>
+                    <option value="1">São Paulo</option>
+                    <option value="2">Recife</option>
+                    <option value="3">Rio de Janeiro</option>
+            </select>
+
+            <select class="custom-select group-prepend">
+                    <option selected>Open this select menu</option>
+                    <option value="1">Mesa</option>
+                    <option value="2">Sala de Reunião</option>
+                    <option value="3">Three</option>
+            </select>
+
+            <button class="btn btn-outline btn-group btn-warning text-white" role="group">
+            <i class="fas fa-search"></i>
+            </button>
+
+        </form><!--Input-Group-->
+    </div>
+
+    </div><!--Home Page-->
 </body>
 </html>
