@@ -37,8 +37,8 @@
 <body>
 <div id="homepage">
     <nav class="navbar navbar-expand-lg navbar-light">
-        <img src="./assets/img/logo-menu.png" class="navbar-brand img-fluid">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <img id="menuimage" src="./assets/img/logo-menu.png" class="navbar-brand img-fluid">
+        <button id="menubutton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -62,35 +62,106 @@
         </div>
       </nav><!--Nav End-->
       
-      <div class="row justify-content-center mt-5">
-          <div class="col-" id="text-home"> 
-              <p class="mb-0"><span class="text-warning">COWORKINGS</span> DIFERENTES</p>
-              DE TUDO O QUE VOCÊ JÁ VIU</div>
-      </div><!--Row-->
+      <div class="container" id="homemain">
+        <div class="row justify-content-center">
+            <div class="col- text-center text-white" id="text-home"> 
+                <p class="mb-0"><span class="text-warning">COWORKINGS</span> DIFERENTES</p>
+                DE TUDO O QUE VOCÊ JÁ VIU</div>
+        </div><!--Row-->
 
-      <div class="row justify-content-center mt-3">
-        <form class="btn-group" role="group" method="post" action="#">
-            <select class="custom-select">
-                    <option selected>Escolha a cidade</option>
-                    <option value="1">São Paulo</option>
-                    <option value="2">Recife</option>
-                    <option value="3">Rio de Janeiro</option>
-            </select>
+        <div class="row justify-content-center mt-3">
+          <div class="col-12 col-md-12 col-lg-8">
+            <form class="input-group" role="group" method="post" action="#">
+                <select class="custom-select">
+                        <option selected>Cidade</option>
+                        <option value="1">São Paulo</option>
+                        <option value="2">Recife</option>
+                        <option value="3">Rio de Janeiro</option>
+                </select>
 
-            <select class="custom-select group-prepend">
-                    <option selected>Open this select menu</option>
-                    <option value="1">Mesa</option>
-                    <option value="2">Sala de Reunião</option>
-                    <option value="3">Three</option>
-            </select>
+                <select class="custom-select">
+                        <option selected>Tipo</option>
+                        <option value="1">Mesa</option>
+                        <option value="2">Sala de Reunião</option>
+                        <option value="3">Three</option>
+                </select>
 
-            <button class="btn btn-outline btn-group btn-warning text-white" role="group">
-            <i class="fas fa-search"></i>
-            </button>
+                <button class="btn btn-outline btn-group btn-warning text-white" type="submit">
+                <i class="fas fa-search"></i>
+                </button>
+            </form><!--Input-Group-->
+          </div>
+      </div>
+    </div><!--ID Home Main-->
 
-        </form><!--Input-Group-->
-    </div>
+    <div id="onlybee" class="row justify-content-center" id="onlybee">
+        <img src="./assets/img/icon-topo-explore.png">
+      </div>
+
+    <div id="bee">
+      <div class="row justify-content-center mt-0">
+        <span class="text-white">Explore</span>
+      </div>
+    </div><!--Bee Icon-->
 
     </div><!--Home Page-->
+
+    <div class="container d-md-block d-none mb-5">
+      
+      <div class="row text-center mt-5">
+        <p class="col-12 mb-0">Desculpa um coworking no seu endereço</p>
+        <p class="col-12 mt-0">preferido e encontre seu espaço.</p>
+      </div><!--Row-->
+
+      <div class="row justify-content-between">
+
+            <div class="col-md-4 row justify-content-end">
+
+                <div class="align-self-start">
+                      <a href="#"><img src="./assets/img/bairros-paulista.jpg"></a>
+                </div>
+
+                <div class="align-self-end">
+                      <a href="#"><img src="./assets/img/bairros-paulista.jpg"></a>
+                </div>
+
+            </div><!--Col Md 4-->
+
+
+          <div class="col-md-4 row justify-content-center">
+            
+              <a href="#"><img src="./assets/img/bairros-pinheiros.jpg"></a>
+
+          </div><!--Col Md 4-->
+
+            <div class="col-md-4 row justify-content-start">
+             
+             <div class="align-self-start">
+                <a href="#"><img src="./assets/img/bairros-farialima.jpg"></a>    
+              </div>
+
+              <div class="align-self-end">
+               <a href="#"><img src="./assets/img/bairros-jardins.jpg"></a>
+              </div>
+
+            </div><!--Col Md 4-->
+
+      </div><!--Row-->
+
+    </div><!--Container-->
+
+    <div id="secondpage">
+          
+          <div class="row align-items-center h-100">
+
+            <div class="col-12 text-center text-warning" id="text-home"> 
+                <p class="m-0">Venha conhecer a comunidade Beeworking</p>
+            </div>
+
+            <div class="col-12 text-white text-justify">
+              <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+            </div>
+          </div>
+      </div>
 </body>
 </html>
