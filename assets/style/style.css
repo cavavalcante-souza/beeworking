@@ -4,8 +4,61 @@ body,html{
     width: 100%;
     height: 100%;
     font-family: 'Raleway', Tahoma, arial;
-    word-break: break-all;
 }
+
+.bg-amarelo {
+    background-color: #f8ad12;
+}
+
+.bg-roxo {
+    background-color: #311b44;
+}
+
+.bg-amarelo h4 {
+    color: #311b44;
+}
+
+.bg-roxo h4 {
+    color: #f8ad12;
+}
+
+.btn-outline-amarelo{
+    outline-color: #311b44;
+}
+
+
+.btn-outline-amarelo {
+    border-color: #f8ad12;
+    color: green;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-outline-amarelo:hover {
+    background-color: #f8ad12;
+    color: #311b44;
+    font-weight: bolder;
+}
+
+.btn-outline-roxo {
+    border-color: #311b44;
+    color: green;
+    background-color: transparent;
+    color: white;
+}
+
+.btn-outline-roxo:hover {
+    background-color: #311b44;
+    color: #f8ad12;
+    font-weight: bolder;
+}
+
+#abelha{
+    position: absolute;
+    left: 46%;
+    top: 40%;
+}
+
 
 
 /*=====================================OTHERS=========================================*/
@@ -20,6 +73,10 @@ body,html{
 #secondpage{
     background-image: url('../img/bg-missao.jpg');
     height: 40%;
+}
+
+#fourpage{
+    position: relative;
 }
 
 
@@ -100,7 +157,7 @@ body,html{
 
 @media screen and (min-width: 992px){
     #homepage{
-        padding: 2em 9em;
+        padding: 0.5em 9em;
     }
 
     #navbarNav a:hover{
